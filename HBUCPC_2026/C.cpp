@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+//发现将01交换，0,1的总数都不变，可以将1转移到任何指定位置的基本操作
+//因此能否通过交换将a转化到b的充要条件是：0,1的总数相等
 int sum(vector<int> vec) {
     int ans = 0;
     for (int i = 0; i < (int)vec.size(); i++) {
@@ -14,6 +16,7 @@ vector<int> cg(string s) {
     }
     return ans;
 }
+//实现方法有点邪门是列表和求和，按理说直接加和统计即可
 int main() {
     int n;
     cin >> n;
