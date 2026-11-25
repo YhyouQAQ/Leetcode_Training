@@ -6,7 +6,7 @@ int main() {
     //检查传入值t是否为完全平方数，返回bool值
     auto check = [](__int128 t) -> bool {
         if (t < 0) {return false;}
-        if (t == 0){return true;}
+        if (t == 0) {return true;}
         ll lo = 1, hi = t;
         while (lo <= hi) {
             ll i = lo + (hi - lo) / 2;
